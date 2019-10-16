@@ -11,6 +11,9 @@
     <h1>
         Registrati su YellowEvents!
     </h1>
+
+    <img src="presentazioni/Img/logo_header.png" width="200">
+
     <h2>Dati utente!</h2>
     <form>
         <div>
@@ -22,78 +25,84 @@
                 </li>
                 <br>
                 <li>
-                  
-                        <label for="surname">Cognome</label>
-                        <input type="text" id="surname" name="surname">
-                        <br>
+
+                    <label for="surname">Cognome</label>
+                    <input type="text" id="surname" name="surname">
+                    <br>
                 </li>
                 <br>
                 <li>
-                  
-                        <label for="date">Data di nascita</label>
-                        <input type="date" id="date" name="date">
-                        <br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
                 </li>
                 <br>
                 <li>
-                  
-                        <label for="residenza">Residenza</label>
-                        <input type="residenza" id="residenza" name="residenza">
-                        <br>
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" required>
+                </li>
+                <br>
+                <li>
+                    <label for="cpass">Conferma password:</label>
+                    <input type="password" id="cpass" name="cpass">
+                </li>
+                <br>
+                <li>
+
+                    <label for="date">Data di nascita</label>
+                    <input type="date" id="date" name="date">
+                    <br>
+                </li>
+                <br>
+                <li>
+
+                    <label for="residenza">Residenza</label>
+                    <input type="residenza" id="residenza" name="residenza">
+                    <br>
                 </li>
                 <label for="si">Il domicilio coincide con la residenza?</label>
-                <input type="checkbox" id="si" name="si" value="si" checked>             
+                <input type="checkbox" id="si" name="si" value="si" checked>
             </ul>
         </div>
+        <h2>Informazioni aggiuntive!</h2>
+        <label for="pubblico">Sei un pubblico o un privato?</label>
+        <label for="pubblico">pubblico</label>
+        <input type="radio" id="pubblico" name="pubblico" value="pubblico" checked>
+        <label for="privato">privato</label>
+        <input type="radio" id="privato" name="privato" value="privato">
+        <br>
+        <br>
+        <label>Quale città vuoi selezionare?</label>
+        <select name="Città">
+            <option value="none">-</option>
+            <option value="Bari">Bari</option>
+            <option value="Locri">Locri</option>
+            <option value="Monza">Monza</option>
+        </select>
+        <button type="button">Salva</button>
+        <br>
+        <br>
+        <label for="Aggiungi informazioni..">Note:</label>
+        <textarea id="Aggiungi informazioni.." placeholder="Aggiungi informazioni..."></textarea>
+        <br>
+        <br>
+        <label for="budget">Quale budget vuoi rispettare?</label>
+        <select name="budget">
+            <option value="none">-</option>
+            <option value="Economy">&lt;100&euro;</option>
+            <option value="Medium"> da 300&euro; a 450&euro;</option>
+            <option value="Expensive">&gt;450&euro;</option>
+        </select>
+        <br>
+        <br>
+        <hr>
+        <button type="save">Save</button>
+        <br>
+        <br>
+        <button type="reset">RESET</button><br>
+        <br>
+        <button type="submit"> <a href="index.html"> Invia e benvenuto!</a></button>
+
     </form>
-    <h2>Informazioni aggiuntive!</h2>
-    <form>     
-            <label for="pubblico">Sei un pubblico o un privato?</label>
-            <label for="pubblico">pubblico</label>
-            <input type="radio" id="pubblico" name="pubblico" value="pubblico"> 
-            <label for="privato">privato</label>
-            <input type="radio" id="privato" name="privato" value="privato">   
-    </form>
-    <br>
-    <br>
-    <form>
-            <label>Quale città vuoi selezionare?</label>
-            <select name="Città">
-                <option value="none">-</option>
-                <option value="Bari">Bari</option>
-                <option value="Locri">Locri</option>
-                <option value="Monza">Monza</option>
-            </select>
-            <button type="button">Salva</button>
-            <br>
-            <br>
-            <label for="creare">Sei un pubblico o un privato?</label>
-            <label for="creare">pubblico</label>
-            <input type="checkbox" id="creare" name="creare" value="creare"> 
-            <label for="partecipare">privato</label>
-            <input type="checkbox" id="partecipare" name="partecipare" value="partecipare">   
-            <br>
-            <br>
-            <label for="Aggiungi informazioni..">Aggiungi informazioni..</label>
-            <input type="text" name="Aggiungi informazioni.." value="Aggiungi informazioni..">
-            <br>
-            <br>
-            <label for="budget">Quale budget vuoi rispettare?</label>
-            <select name="budget">
-                    <option value="none">-</option>
-                    <option value="Economy">&lt;100&euro;</option>
-                    <option value="Medium"> da 300&euro; a 450&euro;</option>
-                    <option value="Expensive">&gt;450&euro;</option>
-                </select>
-          <br>
-          <br>
-          <hr>
-          <button type="save">Save</button>
-          <br>
-          <br>
-         <button type="submit"> <a href="index.html"> Invia e benvenuto!</a></button>
-         
-        </form>
 
 </body>
 
