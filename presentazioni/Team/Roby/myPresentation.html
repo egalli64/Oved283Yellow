@@ -15,7 +15,7 @@
         Politecnico di Bari il 28/03/2018.</p>
     <form>
         <div>
-            <p>Qual è il tuo percorso di studi?</p>
+            <label>Qual è il tuo percorso di studi?</label>
             <input type="radio" id="laurea" name="studi" value="laurea" checked>
             <label for="laurea">laurea</label>
             <input type="radio" id="diploma" name="studi" value="diploma" checked>
@@ -47,6 +47,18 @@
                 </ol>
             </li>
         </ul>
+        <form>
+            <div>
+                <label>Quanti anni di esperienza hai?</label>
+                <input type="checkbox" id="junior" name="junior">
+                <label for="junior">&lt;1</label>
+                <input type="checkbox" id="senior" name="senior">
+                <label for="senior">&gt; 1</label>
+                <input type="checkbox" id="medium" name="medium">
+                <label for="medium">&gt;6 mesi</label>
+                <button type="submit">Invia!</button>
+            </div>
+        </form>
     </p>
     <hr>
     <h2>Città di provenienza</h2>
