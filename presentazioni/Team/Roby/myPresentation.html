@@ -13,6 +13,18 @@
     <h2>Breve Presentazione</h2>
     <p>Sono in possesso di un titolo di laurea in Ingegneria elettronica e delle telecomunicazioni conseguito presso il
         Politecnico di Bari il 28/03/2018.</p>
+    <form>
+        <div>
+            <label>Qual è il tuo percorso di studi?</label>
+            <input type="radio" id="laurea" name="studi" value="laurea" checked>
+            <label for="laurea">laurea</label>
+            <input type="radio" id="diploma" name="studi" value="diploma" checked>
+            <label for="diploma">diploma</label>
+            <input type="radio" id="master" name="studi" value="master" checked>
+            <label for="master">master</label>
+            <button type="submit">Invia!</button>
+        </div>
+    </form>
     <hr>
     <h2>Percorso Professionale</h2>
     <p>Ho avuto la possibilità di effettuare vari tirocini al fine di approfondire le mie conoscenze e capacità: <br>
@@ -35,12 +47,33 @@
                 </ol>
             </li>
         </ul>
+        <form>
+            <div>
+                <label>Quanti anni di esperienza hai?</label>
+                <input type="checkbox" id="junior" name="junior">
+                <label for="junior">&lt;1</label>
+                <input type="checkbox" id="senior" name="senior">
+                <label for="senior">&gt; 1</label>
+                <input type="checkbox" id="medium" name="medium">
+                <label for="medium">&gt;6 mesi</label>
+                <button type="submit">Invia!</button>
+            </div>
+        </form>
     </p>
     <hr>
     <h2>Città di provenienza</h2>
     <p>La mia città di provenienza è <a href="bari.html"><b>BARI</b></a>. Vivo a Milano da Febbraio 2019. Ho deciso di
         trasferirmi per avere più possibilità di crescita personale e professionale.</p>
-        <hr>
+        <form>
+        <label>Hai visitato la mia città?</label>
+        <select name="Città">
+            <option value="none">-</option>
+            <option value="l'ho visitata">l'ho visitata</option>
+            <option value="non l'ho visitata">non l'ho visitata</option>
+        </select>
+        <button type="submit">Invia Risposta</button>
+    </form>
+    <hr>
     <h2>Passioni</h2>
     <p>Le mie passioni sono legate al mondo delle Telecomunicazioni, dell'Informatica e dell'aerospazio.
         <br>
@@ -49,8 +82,27 @@
         <br>
         <br>
         <img src="../../Img/Roby/Passion.jpg" width="35%">
-
     </p>
+    <form>
+        <div>
+            <label for="name">Quando hai visualizzato il mio sito?</label>
+            <input type="date" id="name" name="calendar">
+        </div>
+        <br>
+        <div>
+            <label for="like">Ti è piaciuto?</label>
+            <button type="submit">Si</button>
+            <button type="submit">NO</button>
+            <p>Se hai voglia di darmi dei consigli, invia un commento</p>
+            <textarea name="comment">Scrivi un commento qui!</textarea>
+            <button type="submit">Invia!</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <a href="#top">Torna su</a>
+    <br>
+    <a href="../../presentazioni.html">Torna da Yellow Team!</a>
 </body>
 
 </html>
