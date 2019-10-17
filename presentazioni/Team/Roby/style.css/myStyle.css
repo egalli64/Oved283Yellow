@@ -1,0 +1,41 @@
+h1{color:rgb(180, 99, 32)}
+    h2{color:rgb(0, 71, 68);
+       
+    }
+    p{color:rgb(0, 0, 0)}
+    
+    h1
+     {
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;  
+  font-family: 'Courier New', Courier, monospace;  
+  font-size: 40pt;
+  text-shadow: 3px 3px 1px rgba(167, 165, 165, 0.534);
+}
+     html {
+            background-color: rgb(255, 251, 212);
+          }
+          [type=text]
+        {
+          background-color: olive;
+        }
+        input:hover
+        {
+          color:blue;
+        }
+        table{
+          border:2px solid red;
+          border-collapse:collapse;
+          Width:50%;
+        }
+        td, th{
+          border:1px solid red;
+          padding:3px;
+          text-align: center;
+        }
+        th{background-color: lightblue;
+        }
+        td {
+          background-color: lightgreen;
+        }
