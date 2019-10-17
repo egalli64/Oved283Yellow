@@ -32,7 +32,7 @@
     <a href="duomo.html"><img src="../../Img/Jacopo/duomo.jpg" width="10%"></a>
 
 
-    <h2>L'autodromo</h2>
+    <h2 id="autodromo">L'autodromo</h2>
 
     <a href="autodromo.html"><img src="../../Img/Jacopo/autodromo.jpg" width="10%"></a>
     <hr>
@@ -42,15 +42,15 @@
 
         <div>
             <label for="name">Nominativo:</label>
-            <input type="text" id="name" name="sender" size="10" required>
+            <input type="text" id="name" name="sender" size="10" required>*
         </div><br>
         <div>
             <label for="mail">Email:</label>
-            <input type="text" id="mail" name="sender" size="10" required>
+            <input type="text" id="mail" name="sender" size="10" required>*
         </div><br>
         <div>
             <label for="cell">Cellulare:</label>
-            <input type="text" id="cell" name="sender" size="10" value="+39">
+            <input type="number" id="cell" name="sender" size="10" value="+39">
         </div><br>
         <div>
             <label for="note">Note:</label>
@@ -60,6 +60,7 @@
             <label for="date">Data:</label>
             <input id="date" type="date" name="milestone" value="Data:">
         </div><br>
+        <label>* Campo obbligatorio</label><br><br>
         <div>
             <button type="submit">PRENOTA!</button>
         </div><br><br>
