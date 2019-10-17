@@ -1,8 +1,32 @@
+
+
 h1 {
     text-align: center;
-color: green;
+    font-family: fantasy;
+    color: green;
 }
 
+h2 {
+    font-family: fantasy;
+    text-align: center;
+    color: darkblue;
+}
+
+#monza {
+    color: blue;
+}
+
+#monza:hover {
+color: darkslateblue;;
+}
+
+#parco {
+    color: darkgoldenrod;
+}
+
+#duomo{
+    color: darkmagenta;
+}
 
 p{
     font-family: Cambria, serif;
