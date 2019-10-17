@@ -8,13 +8,22 @@ h1 {
     text-shadow: 3px 3px 1pc rgba(167, 165, 165, 0.534);
 }
 
-h2{color: rgb(0, 71, 68)}
+h2{color: rgb(0, 71, 68); text-align: center;}
 
-p{color: rgb(0,0,0)}
+h3{color: rgb(0, 71, 68); text-align: center;}
+
+p{
+    color: rgb(0,0,0);
+    font-family: Cambria;
+    text-align: center;
+}
 
 html {
     background-color: rgb(255, 251, 212);
 }
+
+
+
 
 [type=text] {
     background-color: olive;
@@ -44,4 +53,20 @@ table {
     background-color: rgb(245, 240, 218);
     }
 
-    
+  img{display: block; margin-left: auto; margin-right: auto; ;}
+
+
+
+
+  fieldset{
+    display: unset;
+    margin-left: ;
+    margin-right: auto;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+  }
+
