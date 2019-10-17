@@ -1,21 +1,9 @@
 p{color: black;}
 
-h3{color:blue}
+h3{color:black}
 
 h1{color: black;text-align: start; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
-
-
-
-[type=text] {
-    background-color: olive;
-   }
-   [type=number] {
-    background-color: yellow;
-   }
-   input:hover {
-    color: blue;
-   }
 
    table {
     border: 2px solid black;
