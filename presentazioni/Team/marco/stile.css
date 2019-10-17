@@ -3,3 +3,18 @@ p{color: black;}
 h3{color:blue}
 
 h1{color:red;text-align: start; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+
+
+[type=text] {
+    background-color: olive;
+   }
+   [type=number] {
+    background-color: yellow;
+   }
+   input:hover {
+    color: blue;
+   }
+
+
