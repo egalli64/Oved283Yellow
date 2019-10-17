@@ -23,7 +23,7 @@ h1{color: black;text-align: start; font-family: Cambria, Cochin, Georgia, Times,
     Width: 50%;
    }
    td, th {
-    border: 1px solid red;
+    border: 1px solid black;
     padding: 3px;
     text-align: center;
    }
@@ -32,7 +32,7 @@ h1{color: black;text-align: start; font-family: Cambria, Cochin, Georgia, Times,
     color: rgb(17, 16, 16);
    }
    td {
-    background-color: lightgreen;
+    background-color: white;
    }
 
 
