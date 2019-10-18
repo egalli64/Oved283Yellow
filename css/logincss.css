@@ -13,13 +13,12 @@
       color: blue;
   }
   .container-fluid{
-position: fixed;
-right: 0mm;
-
-  }
-  .col{
+      text-align: center;
+      top:50mm;
+    }
+      .col{
       position: fixed;
-      left: 0mm;
+      top: 50mm;
     
   }
   .Home{
@@ -31,7 +30,8 @@ right: 0mm;
    right: 5mm;
 }
 
-.button {
+.btn-group  {
+    bottom: 50mm;
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -45,15 +45,4 @@ right: 0mm;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.button{
-    position: fixed;
-   right: 0;
-}
+ 
