@@ -1,0 +1,72 @@
+h1 {
+    color: rgb(180, 99, 32);
+    margin: 0;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40pt;
+    text-shadow: 3px 3px 1pc rgba(167, 165, 165, 0.534);
+}
+
+h2{color: rgb(0, 71, 68); text-align: center;}
+
+h3{color: rgb(0, 71, 68); text-align: center;}
+
+p{
+    color: rgb(0,0,0);
+    font-family: Cambria;
+    text-align: center;
+}
+
+html {
+    background-color: rgb(255, 251, 212);
+}
+
+
+
+
+[type=text] {
+    background-color: olive;
+}
+
+input:hover {color: blue;}
+
+table {
+    border: 3px solid darkgreen;
+    border-collapse: collapse;
+    Width: 30%;
+    align-content: center;
+    margin: 0 auto;
+    }        
+    
+    td, th {
+    border: 1px dotted darkgreen;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Trebuchet MS'; ;
+    }
+    th {
+    background-color: rgb(250, 225, 143);
+    color: rgb(219, 127, 51);
+    }
+    td {
+    background-color: rgb(245, 240, 218);
+    }
+
+  img{display: block; margin-left: auto; margin-right: auto; ;}
+
+
+
+
+  fieldset{
+    display: unset;
+    margin-left: ;
+    margin-right: auto;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+  }
+

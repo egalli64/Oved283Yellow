@@ -3,74 +3,77 @@
 
 <head>
     <title>monza</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/css-yellow.css" />
 </head>
 
 <body>
     <h1 id="monza">MONZA</h1>
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44680.61716954628!2d9.240967142945912!3d45.57971697543382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b9a136505b87%3A0x11cc7d58ca00449d!2s20900%20Monza%20MB!5e0!3m2!1sit!2sit!4v1571233580726!5m2!1sit!2sit" width="50%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <figure>
-        <img src="../../Img/Jacopo/copertina.jpg" width="50%">
-    </figure>
 
-    <p> Monza è una città di 123 744 abitanti, capoluogo della provincia di Monza e della Brianza. <br>
-        È il terzo comune della Lombardia per numero di abitanti, e il trentaquattresimo in tutto il territorio
+   
+    <figure> <img src="../../Img/Jacopo/copertina.jpg" width="40%"></figure>
+
+    <p> Monza è una città di 123 744 abitanti, capoluogo della provincia di <b>Monza e della Brianza</b>. <br>
+        È il <b>terzo comune della Lombardia</b> per numero di abitanti, e il trentaquattresimo in tutto il territorio
         nazionale.</p>
 
 
-    <h2>Il Parco</h2>
+    <h2 id="parco">Il Parco</h2>
 
     <a href="parco.html"><img src="../../Img/Jacopo/villa.jpg" width="10%"></a>
 
 
 
-    <h2>Il Duomo</h2>
+    <h2 id="duomo">Il Duomo</h2>
 
     <a href="duomo.html"><img src="../../Img/Jacopo/duomo.jpg" width="10%"></a>
 
 
-    <h2>L'autodromo</h2>
+    <h2 id="autodromo">L'autodromo</h2>
 
     <a href="autodromo.html"><img src="../../Img/Jacopo/autodromo.jpg" width="10%"></a>
-<hr>
-<h3>Prenota un tour!</h3>
+   <br> <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44680.61716954628!2d9.240967142945912!3d45.57971697543382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b9a136505b87%3A0x11cc7d58ca00449d!2s20900%20Monza%20MB!5e0!3m2!1sit!2sit!4v1571233580726!5m2!1sit!2sit"
+    width="50%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <hr>
+    <h3>Prenota un tour!</h3>
 
-<form action="/comment" method="post">
-        
-    <div>
+    <form action="/comment" method="post">
+
+        <div>
             <label for="name">Nominativo:</label>
-            <input type="text" id="name" name="sender" size="10" required>
-        </div>
+            <input type="text" id="name" name="sender" size="10" required>*
+        </div><br>
         <div>
             <label for="mail">Email:</label>
-            <input type="text" id="mail" name="sender" size="10" required>
-        </div>
-    
+            <input type="text" id="mail" name="sender" size="10" required>*
+        </div><br>
         <div>
-        <label for="cell">Cellulare:</label>
-        <input type="text" id="cell" name="sender" size="10" value="+39"> 
-    </div>
-    <div>
-        <label for="note">Note:</label>
-        <textarea id="note" name="Presentazione" placeholder="Aggiungi note"></textarea>
-    </div>
-    <div>
-        <label for="date">Data:</label>
-        <input id="date" type="date" name="milestone" value="Data:">
-    </div><br>
-    <div>
-        <button type="submit">PRENOTA!</button>
-    </div><br><br>
+            <label for="cell">Cellulare:</label>
+            <input type="number" id="cell" name="sender" size="10" value="+39">
+        </div><br>
+        <div>
+            <label for="note">Note:</label>
+            <textarea id="note" name="Presentazione" placeholder="Aggiungi note"></textarea>
+        </div><br>
+        <div>
+            <label for="date">Data:</label>
+            <input id="date" type="date" name="milestone" value="Data:">
+        </div><br>
+        <label>* Campo obbligatorio</label><br><br>
+        <div>
+            <button type="submit">PRENOTA!</button>
+        </div><br><br>
 
 
 
-</form>
+    </form>
 
 
 
 
 
-    <hr><p>
+    <hr>
+    <p>
         Per approfondimenti:
         <ul>
             <li><a href="https://it.wikipedia.org/wiki/Monza">Wikipedia</a></li>
