@@ -4,7 +4,7 @@ h1 {
     text-align: center;
     padding: 20px 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 60pt;
+    font-size: 90pt;
     text-shadow: 3px 3px 1pc darkorange;
 }
 
@@ -92,3 +92,8 @@ input{
   text-align: center;
 }
 
+figcaption{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(179, 91, 40);
+}
