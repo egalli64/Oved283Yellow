@@ -1,41 +1,55 @@
-h1{color:rgb(180, 99, 32)}
-    h2{color:rgb(0, 71, 68);
-       
-    }
-    p{color:rgb(0, 0, 0)}
-    
-    h1
-     {
+h1 {
+  color: black;
   margin: 0;
   text-align: center;
-  padding: 20px 0;  
-  font-family: 'Courier New', Courier, monospace;  
-  font-size: 40pt;
-  text-shadow: 3px 3px 1px rgba(167, 165, 165, 0.534);
+  padding: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60pt;
+  text-shadow: 3px 3px 1pc darkorange;
 }
-     html {
-            background-color: rgb(255, 251, 212);
-          }
-          [type=text]
-        {
-          background-color: olive;
-        }
-        input:hover
-        {
-          color:blue;
-        }
-        table{
-          border:2px solid red;
-          border-collapse:collapse;
-          Width:50%;
-        }
-        td, th{
-          border:1px solid red;
-          padding:3px;
-          text-align: center;
-        }
-        th{background-color: lightblue;
-        }
-        td {
-          background-color: lightgreen;
-        }
+
+h2{color: black;  font-family: 'Courier New', Courier, monospace;text-shadow: 3px 3px 1pc darkorange; text-align: center; font-size: 20pt;}
+
+h3{color: black; text-align: center;}
+
+p{
+  color: black;
+  font-family: Cambria;
+  text-align: center;
+  font-size: 14pt;
+}
+
+html {
+  background-color: rgba(253, 222, 84, 0.904);
+  border: black dotted 20px;
+}
+
+
+
+
+[type=text] {
+  background-color: lightgoldenrodyellow;
+}
+
+input:hover {color: blue;}
+
+
+img{display: block; margin-left: auto; margin-right: auto;}
+
+
+hr{color: black;}
+
+fieldset{
+  display: unset;
+  margin-left: ;
+  margin-right: auto;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+  background: white;
+  font: bold;
+}
+
+
