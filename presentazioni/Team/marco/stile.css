@@ -1,5 +1,28 @@
 p{color: black;}
 
-h3{color:blue}
+h3{color:black}
 
-h1{color:red;text-align: start; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h1{color: black;text-align: start; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+   table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    Width: 50%;
+   }
+   td, th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+   }
+   th {
+    background-color: white;
+    color: rgb(17, 16, 16);
+   }
+   td {
+    background-color: white;
+   }
+
+html {background-image: ;}
+
+
