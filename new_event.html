@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        nuovo_evento
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-yellow.css">
+</head>
+
+<body>
+
+    <img src="img/logo.JPG" width="10%">
+
+    <h1>
+        Inserisci un nuovo evento
+    </h1>
+<br><br>
+    <form>
+        <div>
+            <label for="user">User:</label>
+            <input type="text" id="user" name="user">
+            <br><br>
+
+            <label>Tipo di evento</label>
+            <select name="tipologia">
+                <option value="matrimonio">Matrimonio</option>
+                <option value="compleanno">Compleanno</option>
+                <option value="laurea">Laurea</option>
+                <option value="evsportivi">Eventi sportivi</option>
+                <option value="batt_com_cre">Battesimi/Comunioni/Cresime</option>
+                <option for="altro" value="altro">Altro (specificare)</option>
+                <input type="text" id="altro" name="altro" placeholder="Altro...">
+            </select>
+
+            <br><br>
+            <label for="luogo">Luogo:</label>
+            <input type="text" id="luogo" name="luogo" placeholder="Via/Piazza">
+            <input type="text" id="luogo" name="luogo" placeholder="Città">
+            <input type="text" id="luogo" name="luogo" placeholder="Prov">
+            <br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <br><br>
+
+            <label for="num_invitati">Numero di invitati:</label>
+            <input type="number" id="num_invitati" name="num_invitati" required>
+            <br><br>
+
+            <label for="foto">Richiesta fotografo:</label>
+            <input type="radio" id="fotoS" name="foto" value="SI">
+            <label for="fotoS">Sì</label>
+            <input type="radio" id="fotoN" name="foto" value="NO" checked>
+            <label for="fotoN">No</label>
+            <br><br>
+
+            <label for="budget">Budget indicativo (in €):</label>
+            <input type="text" id="budget" name="budget">
+            <br><br>
+
+            <label for="info">Note:</label>
+            <textarea id="info" placeholder="Aggiungi informazioni..."></textarea>
+            <br><br>
+            <hr>
+            <label for="trattam_dati">Autorizzo il trattamento dei dati:</label>
+            <input type="radio" id="trattam_dati_S" name="trattam_dati" value="SI" required>
+            <label for="trattam_dati_S">Sì</label>
+            <input type="radio" id="trattam_dati_N" name="trattam_dati" value="NO" checked>
+            <label for="trattam_dati_N">No</label>
+            <br>
+            <hr><br>
+
+            <button type="reset">RESET</button><br>
+            <br>
+            <button type="submit"> <a href="presentazioni/confirm.html">Conferma</a></button>
+
+    </form>
+
+</body>
+
+</html>
