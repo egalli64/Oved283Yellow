@@ -36,34 +36,39 @@ html {
     background-color: lightgoldenrodyellow;
 }
 
-input:hover {color: blue;}
+input:hover {
+  color: blue;
+}
 
 table {
-    border: 3px solid darkgreen;
-    border-collapse: collapse;
-    Width: 30%;
-    align-content: center;
-    margin: 0 auto;
-    }        
-    
-    td, th {
+  border: 3px solid black;
+  border-collapse: collapse;
+  Width: 30%;
+  align-content: center;
+  margin: 0 auto;
+}
+
+td, th {
     border: 1px dotted darkgreen;
     padding: 3px;
     text-align: center;
     font-family: 'Trebuchet MS'; ;
     }
-    th {
+
+th {
     background-color: rgb(250, 225, 143);
     color: rgb(219, 127, 51);
-    }
-    td {
+}
+
+td {
     background-color: rgb(245, 240, 218);
-    }
+}
 
-  img{display: block; margin-left: auto; margin-right: auto;}
+img{display: block; margin-left: auto; margin-right: auto;}
 
-
-hr{color: black;}
+hr{
+  color: black;
+}
 
   fieldset{
     display: unset;
@@ -83,6 +88,7 @@ hr{color: black;}
     font-size: 12pt;
     text-align: center;
   }
+
 
 input{
   font-size: 8pt;}
@@ -116,7 +122,38 @@ figcaption{
 
 
 }
+
 body {
   padding-top: 100px; 
   background-color: yellow;
 }          
+
+
+.col_evento {
+  text-align: center;
+  background-color: darkorange;
+  color: black;
+  font: bolder;
+}
+
+.col_text {
+  text-align: center;
+  background-color: white;
+  color: orangered;
+  font: bolder;
+}
+
+
+par_ev
+
+p.par_ev {
+  color: green;
+  font-family: Cambria;
+  font-size: 14pt;
+}
+
+
+.center {
+  display: table;
+  margin: 20px auto;
+  }
