@@ -19,7 +19,7 @@ $().ready(function () {
             password: {
                 required: "Inserisci una password valida",
                 minlength: "La password deve essere lunga minimo 5 caratteri",
-                maxlength: "La password deve essere lunga al massimo 8 caratteri"
+                               maxlength: "La password deve essere lunga al massimo 8 caratteri"
             },
             email: "Inserisci la tua email"
         },
