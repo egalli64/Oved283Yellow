@@ -57,4 +57,27 @@ $().ready(function () {
     });
 
 
+    /*  $('#domRes').click(function () {
+     if (!document.getElementById("domRes").checked) {
+         $("#location2").removeAttr('hidden');
+     }
+ }); */
+
 });
+
+
+function attribute() {
+    if (document.getElementById("domRes").checked) {
+        $("#location2").attr('hidden');
+    } else {
+        $("#location2").removeAttr('hidden');
+    }
+    if (document.getElementById("azienda").selected) {
+        $("#nomeazienda").attr('hidden');
+    } else {
+        $("#nomeazienda").removeAttr('hidden');
+    }
+}
+
+
+
