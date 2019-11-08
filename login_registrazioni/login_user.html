@@ -2,42 +2,36 @@
 <html>
 
 <head>
-    <title>copertina</title>
-
+    <title>login_user</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/css-yellow.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script type="text/javascript" src="formController.js"></script>
 </head>
 
 <body>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col"></div>
-            <div class="accesso_user">
-                <form id="accesso_user" action="" method="post">
-                    <div>
-                        <label>Accedi all'area privata</label>
-                    </div>
-                    <div>
-                        <label for="msg">User:</label>
-                        <input id="msg" name="user" maxlength="10" required></input><br>
-                        <label for="pssw">Password:</label>
-                        <input id="pssw" type="password" name="pssw" required />
-                        <button type="submit"> <a href="area_personale.html"> Entra</a></button></div>
-                    <div>
-
-                        <label>Non sei ancora registrato? <a href="form_registrazione.html">Registrati ora!</a></label>
-
-                    </div>
-                </form>
+    <div id="mioForm">
+        <h1>Accedi all'area privata</h1>
+        <form id="form_login" class="form">
+            <div>
+                <label for="email">User: </label>
+                <input type="text" name="email" placeholder="Email">
+           
+                <label for="password">Password: </label>
+                <input type="password" name="password">
+      
+                <input type="submit" value="Entra">
             </div>
-            <div class="col"></div>
-        </div>
+
+        </form>
+        <hr>
+        <label>Non sei ancora registrato? <a href="form_registrazione.html">Registrati ora!</a></label><br><br>
+        <a href="../index.html"><img src="../img/logo.jpg" width="30%"></a>
     </div>
+
+
 </body>
 
 </html>
