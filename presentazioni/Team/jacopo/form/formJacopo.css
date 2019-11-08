@@ -1,0 +1,9 @@
+#form label.error {
+    color: red;
+    font-weight: bold;
+}
+ 
+.mioForm {
+    width: 600px;
+    margin: 0 auto;
+}

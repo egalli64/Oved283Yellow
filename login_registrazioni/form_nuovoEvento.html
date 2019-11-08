@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        form_registrazione
+    </title>
+</head>
+
+<body>
+    <h1>
+        NUOVO EVENTO
+    </h1>
+
+    <a href="../index.html"> <img src="../img/logo.JPG" width="200"></a>
+
+
+    <form>
+
+
+
+        <p>(* Campo obbligatorio)</p>
+
+
+        <h3>Informazioni aggiuntive</h3>
+        <label>Tipo di utente:</label>
+        <label for="azienda">azienda</label>
+        <input type="radio" id="azienda" name="azienda" value="azienda">
+        <label for="privato">privato</label>
+        <input type="radio" id="privato" name="privato" value="privato" checked>
+        <br><br>
+
+        <label for="Aggiungi informazioni..">Note:</label>
+        <textarea id="Aggiungi informazioni.." placeholder="Aggiungi informazioni..."></textarea>
+        <br>
+        <br>
+        <label for="budget">Quale budget vuoi rispettare?</label>
+        <select name="budget">
+            <option value="none">-</option>
+            <option value="Economy">&lt;100&euro;</option>
+            <option value="Medium"> da 300&euro; a 450&euro;</option>
+            <option value="Expensive">&gt;450&euro;</option>
+        </select>
+        <br>
+        <br>
+        <hr>
+        <button type="reset">RESET</button><br>
+        <br>
+        <button type="submit"> <a href="conferma_registr.html"> Invia e benvenuto!</a></button>
+
+    </form>
+
+</body>
+
+</html>

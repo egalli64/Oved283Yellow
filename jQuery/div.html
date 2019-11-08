@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quanti div ci sono?</title>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="numbersDiv.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <h1>Test con jQuery</h1>
+    <button id="go">&raquo; TEST FUNZIONE JQUERY</button>
+    <div id="block">Hello!</div>
+
+    <div class="num">
+        <p>jQuery è una libreria <a href="https://it.wikipedia.org/wiki/JavaScript">JavaScript</a>. E' nata per
+            semplificare la gestione della DOM.</p>
+        <figure>
+            <img src="jquery-logo.png" width="50%">
+            <figcaption>Logo jQuery</figcaption>
+        </figure>
+    </div>
+    <div class="num">
+        <h2>Evento Ready</h2>
+        <p>jQuery ha semplificato l'aspetto, oggi noto con la funzionalità onload, di eseguire funzioni non appena il
+            documento corrente risulta correttamente caricato dal browser.</p>
+        <p>Parliamo appunto dell'<b>evento ready</b>.</p>
+        <p>Il metodo ready() ha come parametro una funzione in cui posso inserire il mio codice.</p>
+        <p id="msg">Funzione dollaro $: definisce la funzione jQuery. La posso utilizzare però dopo aver importato la
+            libreria
+            jQuery.... (<a href="#">click!</a>)
+            <div id="cens"><span id="ascens">CENSORED!</span></div>
+        </p>
+        <button onclick="more();">Aumenta dimensione</button>
+
+        <button onclick="reduce();">Riduci dimensione</button>
+        <div>
+            <input id="txt_name" type="text">
+            <button onclick="changeText();">Cambia testo</button>
+        </div>
+        <figure>
+            <img src="jquery-document-ready-function.jpg" width="33%">
+            <figcaption>In basso alla figura possiamo vedere la funzione dollaro. In questo esempio la funzione dollaro
+                ci dice che non appena il documento è pronto, esegue.</figcaption>
+        </figure>
+    </div>
+    <span id="numDiv"></span>
+    <button onclick="changeColor();" class="red" type="button">Cambia stile</button>
+
+</body>
+
+</html>
