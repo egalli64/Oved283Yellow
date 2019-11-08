@@ -118,7 +118,7 @@ figcaption{
 #logo{
   position: fixed;
   left:5mm;
-  top:10mm;
+  top:20mm;
 
 
 }
@@ -144,8 +144,6 @@ body {
 }
 
 
-par_ev
-
 p.par_ev {
   color: green;
   font-family: Cambria;
@@ -157,3 +155,10 @@ p.par_ev {
   display: table;
   margin: 20px auto;
   }
+
+  #asdlogo{
+    left:0;
+  }
+
+
+ 
