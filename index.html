@@ -18,6 +18,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="login_registrazioni/indexPage.js"></script>
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><a href="img/logo.JPG"><img id="go" src="img/logo.JPG" width="60"
+        <a class="navbar-brand" href="#"><a href="img/logo.JPG"><img id="go" src="img/logo.JPG" width="150"
                     class="d-inline-block align-top" alt=""></a></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -39,12 +41,12 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="presentazioni/presentazioni.html">Chi siamo <span
-                            class="sr-only">(current)</span></a>
+                    <a id="asChiSiamo" class="nav-link" href="presentazioni/presentazioni.html"
+                        style="color: yellow">Chi siamo <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a id="asOrganizzazione" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: yellow">
                         Organizzazione Eventi!
                     </a>
                     <div class="dropdown-menu content-fluid" aria-labelledby="navbarDropdownMenuLink">
@@ -54,30 +56,98 @@
                 </li>
             </ul>
             <div class="navbar-brand my-2">
-                <ul class="navbar-nav my-2 my-sm-0"><a href="login_registrazioni/login_user.html">Login <img
-                            src="img/login.png" width="30" height="30" alt="">
+                <ul class="navbar-nav my-2 my-sm-0"><a href="login_registrazioni/login_user.html"
+                        style="color: yellow">Login <img src="img/login.png" width="30" height="30" alt="">
                     </a>
                 </ul>
 
             </div>
     </nav>
+    <div class="slider" id="main-slider"><!-- outermost container element -->
+        <div class="slider-wrapper"><!-- innermost wrapper element -->
+            <img src="img/yellow_EVEnts.jpg" alt="First" class="slide" /><!-- slides -->
+            <img src="img/sedeYellow.jpg" alt="Second" class="slide" />
+            <img src="img/catering.PNG" alt="Third" class="slide" />
+        </div>
+    </div>	
+   
+    <br>
+    <hr class="separator">
+    <div class="content-fluid" style="background-color: #FFFFC2">
+        <h2 id="asdescription"><b>Agenzia Organizzazione Eventi</b></h2>
+        <h3 id="asdmotto">L'ARTE DI ORGANIZZARE<i> <b>EVENTI DI SUCCESSO</b></i></h3>
+        <p><i id="asYell"><b>&Yscr;</b>ellowEvents</i> srl è un’agenzia di servizi per eventi con sede a Milano: dal
+            2006 supportiamo i nostri
+            clienti
+            nell'organizzazione dei loro eventi, dall’ideazione e pianificazione sino alla gestione della fase
+            operativa. Ma non solo. Alla base dei nostri servizi ci sono ispirazione, professionalità e la
+            voglia di
+            dar vita alla tua visione e al tuo brand.</p>
+    </div>
 
-    <div class="content-fluid">
-        <div class="row-12">
-            <div class="col-md-12">
-                <img src="img/yellow_EVEnts.jpg" class="rounded mx-auto d-block" />
-            </div>
+    </div>
+    <br>
+    <hr class="separator">
+
+    <footer id="bottom" class="row text-left p-4">
+        <div class="col-12 col-md-3">
+            <h2>Iscriviti alla Newsletters!</h2>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" style="color: black;">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Inserisci email">
+                    <small id="emailHelp" class="form-text text-white">L'indirizzo e-mail non verrà condiviso.</small>
+                </div>
+                <button id="btnews" type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <br>
-        <hr>
-        <div class="content-fluid">
-            <h2>Agenzia Organizzazione Eventi</h2>
-              <h3>L'ARTE DI ORGANIZZARE EVENTI DI SUCCESSO</h3>  
-                <p>YellowEvents srl è un’agenzia di servizi per eventi con sede a Milano: dal 2006 supportiamo i nostri clienti
-                nell'organizzazione dei loro eventi, dall’ideazione e pianificazione sino alla gestione della fase
-                operativa. Ma non solo. Alla base dei nostri servizi ci sono ispirazione, professionalità e la voglia di
-                dar vita alla tua visione e al tuo brand.</p>
+        <div class="col-12 col-md-3">
+            <h2>CONTATTI</h2>
+            <p id="asrif"><a class="titolo" href="mailto:adm@example.com" style="color: black">yellow@events.it</a>
+                <br>
+                +39 3479854798
+            </p>
+
         </div>
+
+        </div>
+        <div class="col-12 col-md-3">
+            <h2>SEDE LEGALE</h2>
+            <p>
+                <a href="https://www.google.it/maps/place/Piazza+Gae+Aulenti,+12,+20124+Milano+MI/@45.4829507,9.1902876,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c6ccebe38659:0x33d23eeb0234c756!8m2!3d45.482947!4d9.1924763"
+                    style="color: black">Piazza Gae Aulenti 12, Milano(MI)</a>
+            </p>
+        </div>
+        <div class="col-12 col-md-3">
+            <h2>SEDE OPERATIVA</h2>
+            <p>
+                <a href="https://www.google.it/maps/place/Via+Sparano+da+Bari,+87,+70121+Bari+BA/@41.1227848,16.8672534,17z/data=!3m1!4b1!4m5!3m4!1s0x1347e860a293994b:0x395a4f9cecf6cf2a!8m2!3d41.1227808!4d16.8694421"
+                    style="color: black">Via Sparano 87, Bari (Ba)</a>
+                <br>
+                <a href="https://www.google.it/maps/place/Corso+Milano,+66,+20900+Monza+MB/@45.5750513,9.2675891,17z/data=!3m1!4b1!4m5!3m4!1s0x4786b9a6291d2981:0x4e44c6f093ebd3d0!8m2!3d45.5750476!4d9.2697778"
+                    style="color: black">Corso Milano 66, Monza (MB)</a>
+                <br>
+                <a href="https://www.google.it/maps/place/Via+Angelo+Cusmano,+23,+89044+Locri+RC/@38.2416951,16.2618121,17z/data=!3m1!4b1!4m5!3m4!1s0x131526b9c95d62f7:0x353954798d54e234!8m2!3d38.2416909!4d16.2640008"
+                    style="color: black">Via Cusmano 23, Locri (RC)</a>
+            </p>
+
+        </div>
+    </footer>
+    <div id="cookie-law-info-bar"
+        style="background-color: black; color: white; font-family: inherit; bottom: 0px; position: fixed; display: block;">
+        <span>YellowEvents fa uso di cookie, anche di terze parti. Per saperne di più, o negare il consenso a tutti
+            o ad alcuni cookie vi preghiamo di consultare la Cookie policy. Chiudendo questo banner, scorrendo
+            questa pagina o cliccando un qualunque suo elemento si acconsente all’uso dei cookie. <a
+                data-cli_action="accept" id="cookie_action_close_header"
+                class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button"
+                style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);"><button
+                    type="button" onclick="clickOnCookie();">OK</button> </a>
+            <a href="img/Cookie Policy GDPR 09 05 2018 Krastase.pdf" id="CONSTANT_OPEN_URL" target="_blank"
+                class="cli-plugin-main-link" style="display: inline-block; margin: 5px; color: rgb(68, 68, 68);">Cookie
+                Policy</a></span>
+    </div>
+
 </body>
 
 </html>
