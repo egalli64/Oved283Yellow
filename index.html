@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/css-yellow.css">
+    <link rel="stylesheet" type="text/css" href="buttonSuccess.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -19,6 +20,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="login_registrazioni/indexPage.js"></script>
+    <script src="buttonSuccess.js"></script>
+
 
 </head>
 
@@ -40,9 +43,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a id="asChiSiamo" class="nav-link" href="presentazioni/presentazioni.html"
-                        style="color: yellow">Chi siamo <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a id="asOrganizzazione" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: yellow">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu content-fluid" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="aboutUs/aboutUs.html">Chi Siamo</a>
+                        <a class="dropdown-item" href="presentazioni/presentazioni.html">Il nostro Team</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a id="asOrganizzazione" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
@@ -51,7 +60,7 @@
                     </a>
                     <div class="dropdown-menu content-fluid" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="eventi/calendario_eventi.html">Partecipa ad un evento</a>
-                        <a class="dropdown-item" href="birthday.html">Organizza un evento</a>
+                        <a class="dropdown-item" href="#asWhatWeDo">Organizza un evento</a>
                     </div>
                 </li>
             </ul>
@@ -63,14 +72,15 @@
 
             </div>
     </nav>
-    <div class="slider" id="main-slider"><!-- outermost container element -->
-        <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <div class="slider" id="main-slider" style="background-color: #FFFFC2">
+        <!-- outermost container element -->
+        <div class="slider-wrapper">
+            <!-- innermost wrapper element -->
             <img src="img/yellow_EVEnts.jpg" alt="First" class="slide" /><!-- slides -->
             <img src="img/sedeYellow.jpg" alt="Second" class="slide" />
             <img src="img/catering.PNG" alt="Third" class="slide" />
         </div>
-    </div>	
-   
+    </div>
     <br>
     <hr class="separator">
     <div class="content-fluid" style="background-color: #FFFFC2">
@@ -89,65 +99,200 @@
     <br>
     <hr class="separator">
 
-    <footer id="bottom" class="row text-left p-4">
-        <div class="col-12 col-md-3">
-            <h2>Iscriviti alla Newsletters!</h2>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1" style="color: black;">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Inserisci email">
-                    <small id="emailHelp" class="form-text text-white">L'indirizzo e-mail non verrà condiviso.</small>
+    <main>
+
+        <section class="customers-section company-sections ct-u-paddingBoth100 paddingBothHalf noTopMobilePadding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-2">
+                        <h2 class="asdInfo">DI COSA CI OCCUPIAMO</h2>
+                        <hr>
+                        <br>
+                        <h4 class="asdInfo">Siamo sempre impegnati a perfezionare i nostri eventi RIGOROSAMENTE
+                            <b>GIALLI</b> e poi, ogni tanto, ci
+                            concediamo un
+                            caffè.
+                        </h4>
+
+                    </div>
+                    <div class="clearfix">
+                    </div>
                 </div>
-                <button id="btnews" type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
+        </section>
         </div>
-        <div class="col-12 col-md-3">
-            <h2>CONTATTI</h2>
-            <p id="asrif"><a class="titolo" href="mailto:adm@example.com" style="color: black">yellow@events.it</a>
-                <br>
-                +39 3479854798
-            </p>
+        <div class="container ct-u-paddingTop40 ct-u-paddingBottom100">
+            <div class="row">
+                <div class="col-md-12 ct-content">
+                    <section class="clients-home">
+                        <div class="container">
+                            <div class="clients-logos text-center">
+                                <div class="row">
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/zeina.html" class="Zeina"><img
+                                                alt="https://www.solodev.com/assets/clients/logo-zeina.png"
+                                                src="img/birth.jpg" width="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Compleanni</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/logic.html" class="Logic"><img
+                                                alt="https://www.solodev.com/assets/clients/logic.png"
+                                                src="img/laurea.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Lauree</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/smart.html" class="Smart"><img
+                                                alt="https://www.solodev.com/assets/clients/client3.png"
+                                                src="img/catering.PNG" width="180" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Cene</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/softtech.html" class="Softtech"><img
+                                                alt="https://www.solodev.com/assets/clients/softtech.png"
+                                                src="img/sportGi.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Sport</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/wheel.html" class="Wheel"><img
+                                                alt="https://www.solodev.com/assets/clients/logo-target.png"
+                                                src="img/congress.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Congressi</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/3designs.html" class="3designs"><img
+                                                alt="https://www.solodev.com/assets/clients/designx.png"
+                                                src="img/teamBuilding.jpg_fit=scale" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Eventi Aziendali</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/heart.html" class="Heart"><img
+                                                alt="https://www.solodev.com/assets/clients/client7.png"
+                                                src="img/sostenibile.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Eventi sostenibili</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/devtech.html" class="Devtech"><img
+                                                alt="https://www.solodev.com/assets/clients/devtech.png"
+                                                src="img/divise_gialle720_27988.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Hostess e interpreti</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 client-logos-repeater">
+                                        <a href="/path/to/detail/chartz.html" class="Chartz"><img
+                                                alt="https://www.solodev.com/assets/clients/chartz.png"
+                                                src="img/minion.jpg" width="150" height="150"></a>
+                                        <div class="logo-title">
+                                            <div class="displayTable">
+                                                <div class="displayTableCell">Per i più piccoli</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr class="separator">
+        <br>
+        <footer id="bottom" class="row text-left p-4">
 
-        </div>
+            <div class="col-12 col-md-3">
+                <h2>Iscriviti alla Newsletters!</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" style="color: black;">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Inserisci email">
+                        <small id="emailHelp" class="form-text text-white">L'indirizzo e-mail non verrà
+                            condiviso.</small>
+                    </div>
+                    <button id="btnews" type="button">Submit</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-3">
+                <h2>CONTATTI</h2>
+                <p id="asrif"><a class="titolo" href="mailto:adm@example.com" style="color: black">yellow@events.it</a>
+                    <br>
+                    +39 3479854798
+                </p>
 
-        </div>
-        <div class="col-12 col-md-3">
-            <h2>SEDE LEGALE</h2>
-            <p>
-                <a href="https://www.google.it/maps/place/Piazza+Gae+Aulenti,+12,+20124+Milano+MI/@45.4829507,9.1902876,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c6ccebe38659:0x33d23eeb0234c756!8m2!3d45.482947!4d9.1924763"
-                    style="color: black">Piazza Gae Aulenti 12, Milano(MI)</a>
-            </p>
-        </div>
-        <div class="col-12 col-md-3">
-            <h2>SEDE OPERATIVA</h2>
-            <p>
-                <a href="https://www.google.it/maps/place/Via+Sparano+da+Bari,+87,+70121+Bari+BA/@41.1227848,16.8672534,17z/data=!3m1!4b1!4m5!3m4!1s0x1347e860a293994b:0x395a4f9cecf6cf2a!8m2!3d41.1227808!4d16.8694421"
-                    style="color: black">Via Sparano 87, Bari (Ba)</a>
-                <br>
-                <a href="https://www.google.it/maps/place/Corso+Milano,+66,+20900+Monza+MB/@45.5750513,9.2675891,17z/data=!3m1!4b1!4m5!3m4!1s0x4786b9a6291d2981:0x4e44c6f093ebd3d0!8m2!3d45.5750476!4d9.2697778"
-                    style="color: black">Corso Milano 66, Monza (MB)</a>
-                <br>
-                <a href="https://www.google.it/maps/place/Via+Angelo+Cusmano,+23,+89044+Locri+RC/@38.2416951,16.2618121,17z/data=!3m1!4b1!4m5!3m4!1s0x131526b9c95d62f7:0x353954798d54e234!8m2!3d38.2416909!4d16.2640008"
-                    style="color: black">Via Cusmano 23, Locri (RC)</a>
-            </p>
+            </div>
 
-        </div>
-    </footer>
-    <div id="cookie-law-info-bar"
-        style="background-color: black; color: white; font-family: inherit; bottom: 0px; position: fixed; display: block;">
-        <span>YellowEvents fa uso di cookie, anche di terze parti. Per saperne di più, o negare il consenso a tutti
-            o ad alcuni cookie vi preghiamo di consultare la Cookie policy. Chiudendo questo banner, scorrendo
-            questa pagina o cliccando un qualunque suo elemento si acconsente all’uso dei cookie. <a
-                data-cli_action="accept" id="cookie_action_close_header"
-                class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button"
-                style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);"><button
-                    type="button" onclick="clickOnCookie();">OK</button> </a>
-            <a href="img/Cookie Policy GDPR 09 05 2018 Krastase.pdf" id="CONSTANT_OPEN_URL" target="_blank"
-                class="cli-plugin-main-link" style="display: inline-block; margin: 5px; color: rgb(68, 68, 68);">Cookie
-                Policy</a></span>
-    </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h2>SEDE LEGALE</h2>
+                <p>
+                    <a href="https://www.google.it/maps/place/Piazza+Gae+Aulenti,+12,+20124+Milano+MI/@45.4829507,9.1902876,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c6ccebe38659:0x33d23eeb0234c756!8m2!3d45.482947!4d9.1924763"
+                        style="color: black">Piazza Gae Aulenti 12, Milano(MI)</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h2>SEDE OPERATIVA</h2>
+                <p>
+                    <a href="https://www.google.it/maps/place/Via+Sparano+da+Bari,+87,+70121+Bari+BA/@41.1227848,16.8672534,17z/data=!3m1!4b1!4m5!3m4!1s0x1347e860a293994b:0x395a4f9cecf6cf2a!8m2!3d41.1227808!4d16.8694421"
+                        style="color: black">Via Sparano 87, Bari (Ba)</a>
+                    <br>
+                    <a href="https://www.google.it/maps/place/Corso+Milano,+66,+20900+Monza+MB/@45.5750513,9.2675891,17z/data=!3m1!4b1!4m5!3m4!1s0x4786b9a6291d2981:0x4e44c6f093ebd3d0!8m2!3d45.5750476!4d9.2697778"
+                        style="color: black">Corso Milano 66, Monza (MB)</a>
+                    <br>
+                    <a href="https://www.google.it/maps/place/Via+Angelo+Cusmano,+23,+89044+Locri+RC/@38.2416951,16.2618121,17z/data=!3m1!4b1!4m5!3m4!1s0x131526b9c95d62f7:0x353954798d54e234!8m2!3d38.2416909!4d16.2640008"
+                        style="color: black">Via Cusmano 23, Locri (RC)</a>
+                </p>
 
+            </div>
+        </footer>
+        <div id="cookie-law-info-bar"
+            style="background-color: black; color: white; font-family: inherit; bottom: 0px; position: fixed; display: block;">
+            <span>YellowEvents fa uso di cookie, anche di terze parti. Per saperne di più, o negare il consenso a tutti
+                o ad alcuni cookie vi preghiamo di consultare la Cookie policy. Chiudendo questo banner, scorrendo
+                questa pagina o cliccando un qualunque suo elemento si acconsente all’uso dei cookie. <a
+                    data-cli_action="accept" id="cookie_action_close_header"
+                    class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button"
+                    style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);"><button
+                        type="button" onclick="clickOnCookie();">OK</button> </a>
+                <a href="img/Cookie Policy GDPR 09 05 2018 Krastase.pdf" id="CONSTANT_OPEN_URL" target="_blank"
+                    class="cli-plugin-main-link"
+                    style="display: inline-block; margin: 5px; color: rgb(68, 68, 68);">Cookie
+                    Policy</a></span>
+        </div>
+    </main>
 </body>
 
 </html>
