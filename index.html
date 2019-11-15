@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/css-yellow.css">
-    <link rel="stylesheet" type="text/css" href="buttonSuccess.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -20,8 +21,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="login_registrazioni/indexPage.js"></script>
-    <script src="buttonSuccess.js"></script>
-
+    <script src="login.js"></script>
 
 </head>
 
@@ -65,13 +65,43 @@
                 </li>
             </ul>
             <div class="navbar-brand my-2">
-                <ul class="navbar-nav my-2 my-sm-0"><a href="login_registrazioni/login_user.html"
-                        style="color: yellow">Login <img src="img/login.png" width="30" height="30" alt="">
-                    </a>
+                <ul class="navbar-nav my-2 my-sm-0"><button
+                        onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login <img
+                            src="img/login.png" width="30" height="30" alt="">
+                    </button>
                 </ul>
-
             </div>
     </nav>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/avatar-icon-images-4.jpg"  width="20%" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      
+
     <div class="slider" id="main-slider" style="background-color: #FFFFC2">
         <!-- outermost container element -->
         <div class="slider-wrapper">
@@ -237,14 +267,21 @@
                 <h2>Iscriviti alla Newsletters!</h2>
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1" style="color: black;">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Inserisci email">
-                        <small id="emailHelp" class="form-text text-white">L'indirizzo e-mail non verrà
-                            condiviso.</small>
+                        <div class="info">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Inserisci email" required>
+                            <small id="emailHelp" class="form-text text-white">L'indirizzo e-mail non verrà
+                                condiviso.</small>
+                        </div>
+                        <button id="btnews" type="button" href="#ignismyModal" data-toggle="modal" value="Subscribe"
+                            onclick=" return check();">submit
+                        </button>
+                        <div id="control"></div>
+
                     </div>
-                    <button id="btnews" type="button">Submit</button>
                 </form>
+
+
             </div>
             <div class="col-12 col-md-3">
                 <h2>CONTATTI</h2>
@@ -282,11 +319,13 @@
             style="background-color: black; color: white; font-family: inherit; bottom: 0px; position: fixed; display: block;">
             <span>YellowEvents fa uso di cookie, anche di terze parti. Per saperne di più, o negare il consenso a tutti
                 o ad alcuni cookie vi preghiamo di consultare la Cookie policy. Chiudendo questo banner, scorrendo
-                questa pagina o cliccando un qualunque suo elemento si acconsente all’uso dei cookie. <a
-                    data-cli_action="accept" id="cookie_action_close_header"
+                questa pagina o cliccando un qualunque suo elemento si acconsente all’uso dei cookie.
+                <a data-cli_action="accept" id="cookie_action_close_header"
                     class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button"
-                    style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);"><button
-                        type="button" onclick="clickOnCookie();">OK</button> </a>
+                    style="display: inline-block; margin: 5px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+                    <button type="button" onclick="clickOnCookie();">OK
+                    </button>
+                </a>
                 <a href="img/Cookie Policy GDPR 09 05 2018 Krastase.pdf" id="CONSTANT_OPEN_URL" target="_blank"
                     class="cli-plugin-main-link"
                     style="display: inline-block; margin: 5px; color: rgb(68, 68, 68);">Cookie
