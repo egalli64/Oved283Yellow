@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="css/css-yellow.css">
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="registrationForm.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="login_registrazioni/indexPage.js"></script>
+        <script src="login.js"></script>
+        <script src="registrationForm.js"></script>
+
+  
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><a href="index.html"><img id="go" src="img/logo.JPG" width="150"
+                            class="d-inline-block align-top" alt=""></a></a>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+        
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a id="asOrganizzazione" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: yellow">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu content-fluid" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="aboutUs/aboutUs.html">Chi Siamo</a>
+                                <a class="dropdown-item" href="presentazioni/presentazioni.html">Il nostro Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="asOrganizzazione" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: yellow">
+                                Organizzazione Eventi!
+                            </a>
+                            <div class="dropdown-menu content-fluid" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="eventi/calendario_eventi.html">Partecipa ad un evento</a>
+                                <a class="dropdown-item" href="#asWhatWeDo">Organizza un evento</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-brand my-2">
+                        <ul class="navbar-nav my-2 my-sm-0"><button
+                                onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login <img
+                                    src="img/login.png" width="30" height="30" alt="">
+                            </button>
+                        </ul>
+                    </div>
+            </nav>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Inserisci i tuoi dati personali
+                </div>
+                <div class="panel-body">
+                    <form name="myform">
+                        <div class="form-group">
+                            <label for="myName">Nome *</label>
+                            <input id="myName" name="myName" class="form-control" type="text"
+                                data-validation="required">
+                            <span id="error_name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Cognome *</label>
+                            <input id="lastname" name="lastname" class="form-control" type="text"
+                                data-validation="required">
+                            <span id="error_lastname" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input id="email" name="email" placeholder="example@mail.com" class="form-control"
+                                type="text" data-validation="required">
+                            <span id="error_email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">Password (8 characters minimum) *:</label>
+                            <input type="password" id="pass" name="password" minlength="8" placeholder="Yellow1!"
+                                data-validation="required">
+                            <span id="error_pass" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="confpass">Conferma Password *:</label>
+                            <input type="password" class="form-control" id="confpass" data-match="#pass"
+                                data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                            <div class="help-block with-errors"></div>
+                            <span id="error_confpass" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numero di telefono *</label>
+                            <input type="text" id="phone" name="phone" class="form-control">
+                            <span id="error_phone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Data di nascita *</label>
+                            <input type="date" name="dob" id="dob" class="form-control">
+                            <span id="error_dob" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Sesso</label>
+                            <select name="gender" id="gender" class="form-control">
+                                <option selected>Uomo</option>
+                                <option>Donna</option>
+                                <option>Altro</option>
+                            </select>
+                            <span id="error_gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Residenza</p>
+                            <label for="disc">Città :</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <button id="submit" type="submit" value="submit" class="btn btn-primary center">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
