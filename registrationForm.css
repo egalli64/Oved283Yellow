@@ -21,7 +21,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
+    background-color: rgb(114, 114, 114);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -73,7 +73,7 @@ input[type=text], input[type=password] {
   .palel-primary
   {
     border-color: #bce8f1;
- 
+
   }
   .panel-primary>.panel-heading
   {
@@ -85,3 +85,10 @@ input[type=text], input[type=password] {
     background-color: #EDEDED;
   }
 
+  body {
+    padding-top: 115px;
+  }
+
+  #panelDescription{
+    font-size: 18pt;
+  }
